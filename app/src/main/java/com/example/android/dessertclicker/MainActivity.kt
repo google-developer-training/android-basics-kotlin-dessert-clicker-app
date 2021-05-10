@@ -70,7 +70,13 @@ class MainActivity : AppCompatActivity() {
     private var currentDessert = allDesserts[0]
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        // call the superclass implementation to complete the creation of the Activity
         super.onCreate(savedInstanceState)
+
+        // "Log" class <-- writes messages to the Logcat
+        // Logcat is the console for logging msg.
+        // "Log.d" <-- debug message
+        // "TAG" <-- more easily find your log msg. in Logcat
         Log.d(TAG, "onCreated Called")
 
         // Use Data Binding to get reference to the views
@@ -172,6 +178,10 @@ class MainActivity : AppCompatActivity() {
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         Log.d(TAG, "onSaveInstanceState Called")
+        /**
+         * "Bundle" <-- a collection of key-value pairs, where keys are always strings
+         * keep the data in the bundle small
+         */
         outState.putInt(KEY_REVENUE, revenue)
         outState.putInt(KEY_DESSERT_SOLD, dessertsSold)
     }
