@@ -14,14 +14,17 @@
  * limitations under the License.
  */
 
-apply plugin: 'com.android.application'
-apply plugin: 'kotlin-android'
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
 
 android {
     compileSdkVersion 31
     defaultConfig {
         applicationId "com.example.android.dessertclicker"
-        minSdkVersion 21
+        minSdkVersion 19
         targetSdkVersion 31
         versionCode 1
         versionName "1.0"
@@ -35,7 +38,6 @@ android {
         }
     }
     buildFeatures {
-        //noinspection DataBindingWithoutKapt
         dataBinding true
     }
 }
