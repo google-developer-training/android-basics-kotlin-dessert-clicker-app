@@ -80,6 +80,9 @@ class MainActivity : AppCompatActivity() {
             onDessertClicked()
         }
 
+        // Make sure the correct dessert is showing
+        binding.dessertButton.setImageResource(currentDessert.imageId)
+
         // If there is a savedInstanceState bundle, then you're "restarting" the activity
         // If there isn't a bundle, then it's a "fresh" start
         if (savedInstanceState != null) {
@@ -92,9 +95,6 @@ class MainActivity : AppCompatActivity() {
         // Set the TextViews to the right values
         binding.revenue = revenue
         binding.amountSold = dessertsSold
-
-        // Make sure the correct dessert is showing
-        binding.dessertButton.setImageResource(currentDessert.imageId)
     }
 
     override fun onStart() {
