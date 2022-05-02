@@ -1,0 +1,87 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  ~ Copyright 2020, The Android Open Source Project
+4  ~
+5  ~ Licensed under the Apache License, Version 2.0 (the "License");
+6  ~ you may not use this file except in compliance with the License.
+7  ~ You may obtain a copy of the License at
+8  ~
+9  ~      http://www.apache.org/licenses/LICENSE-2.0
+10  ~
+11  ~ Unless required by applicable law or agreed to in writing, software
+12  ~ distributed under the License is distributed on an "AS IS" BASIS,
+13  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+14  ~ See the License for the specific language governing permissions and
+15  ~ limitations under the License.
+16-->
+17<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+18    package="com.example.android.dessertclicker"
+19    android:versionCode="1"
+20    android:versionName="1.0" >
+21
+22    <uses-sdk
+23        android:minSdkVersion="19"
+23-->C:\Users\luigi\OneDrive\Coding Projects\Android Apps\android-basics-kotlin-dessert-clicker-app\app\src\main\AndroidManifest.xml
+24        android:targetSdkVersion="32" />
+24-->C:\Users\luigi\OneDrive\Coding Projects\Android Apps\android-basics-kotlin-dessert-clicker-app\app\src\main\AndroidManifest.xml
+25
+26    <application
+26-->C:\Users\luigi\OneDrive\Coding Projects\Android Apps\android-basics-kotlin-dessert-clicker-app\app\src\main\AndroidManifest.xml:20:5-35:19
+27        android:allowBackup="true"
+27-->C:\Users\luigi\OneDrive\Coding Projects\Android Apps\android-basics-kotlin-dessert-clicker-app\app\src\main\AndroidManifest.xml:21:9-35
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.7.0] C:\Users\luigi\.gradle\caches\transforms-3\ec8778f597115131b77fc5968136215d\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+29        android:debuggable="true"
+30        android:icon="@mipmap/ic_dessert_clicker"
+30-->C:\Users\luigi\OneDrive\Coding Projects\Android Apps\android-basics-kotlin-dessert-clicker-app\app\src\main\AndroidManifest.xml:22:9-50
+31        android:label="@string/app_name"
+31-->C:\Users\luigi\OneDrive\Coding Projects\Android Apps\android-basics-kotlin-dessert-clicker-app\app\src\main\AndroidManifest.xml:23:9-41
+32        android:roundIcon="@mipmap/ic_dessert_clicker_round"
+32-->C:\Users\luigi\OneDrive\Coding Projects\Android Apps\android-basics-kotlin-dessert-clicker-app\app\src\main\AndroidManifest.xml:24:9-61
+33        android:supportsRtl="true"
+33-->C:\Users\luigi\OneDrive\Coding Projects\Android Apps\android-basics-kotlin-dessert-clicker-app\app\src\main\AndroidManifest.xml:25:9-35
+34        android:testOnly="true"
+35        android:theme="@style/AppTheme" >
+35-->C:\Users\luigi\OneDrive\Coding Projects\Android Apps\android-basics-kotlin-dessert-clicker-app\app\src\main\AndroidManifest.xml:26:9-40
+36        <activity
+36-->C:\Users\luigi\OneDrive\Coding Projects\Android Apps\android-basics-kotlin-dessert-clicker-app\app\src\main\AndroidManifest.xml:27:9-34:20
+37            android:name="com.example.android.dessertclicker.MainActivity"
+37-->C:\Users\luigi\OneDrive\Coding Projects\Android Apps\android-basics-kotlin-dessert-clicker-app\app\src\main\AndroidManifest.xml:27:19-81
+38            android:exported="true" >
+38-->C:\Users\luigi\OneDrive\Coding Projects\Android Apps\android-basics-kotlin-dessert-clicker-app\app\src\main\AndroidManifest.xml:28:13-36
+39            <intent-filter>
+39-->C:\Users\luigi\OneDrive\Coding Projects\Android Apps\android-basics-kotlin-dessert-clicker-app\app\src\main\AndroidManifest.xml:29:13-33:29
+40                <action android:name="android.intent.action.MAIN" />
+40-->C:\Users\luigi\OneDrive\Coding Projects\Android Apps\android-basics-kotlin-dessert-clicker-app\app\src\main\AndroidManifest.xml:30:17-69
+40-->C:\Users\luigi\OneDrive\Coding Projects\Android Apps\android-basics-kotlin-dessert-clicker-app\app\src\main\AndroidManifest.xml:30:25-66
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->C:\Users\luigi\OneDrive\Coding Projects\Android Apps\android-basics-kotlin-dessert-clicker-app\app\src\main\AndroidManifest.xml:32:17-77
+42-->C:\Users\luigi\OneDrive\Coding Projects\Android Apps\android-basics-kotlin-dessert-clicker-app\app\src\main\AndroidManifest.xml:32:27-74
+43            </intent-filter>
+44        </activity>
+45
+46        <provider
+46-->[androidx.emoji2:emoji2:1.0.0] C:\Users\luigi\.gradle\caches\transforms-3\b0ea43a9612251fcf995bc1b071462f7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+47            android:name="androidx.startup.InitializationProvider"
+47-->[androidx.emoji2:emoji2:1.0.0] C:\Users\luigi\.gradle\caches\transforms-3\b0ea43a9612251fcf995bc1b071462f7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+48            android:authorities="com.example.android.dessertclicker.androidx-startup"
+48-->[androidx.emoji2:emoji2:1.0.0] C:\Users\luigi\.gradle\caches\transforms-3\b0ea43a9612251fcf995bc1b071462f7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+49            android:exported="false" >
+49-->[androidx.emoji2:emoji2:1.0.0] C:\Users\luigi\.gradle\caches\transforms-3\b0ea43a9612251fcf995bc1b071462f7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+50            <meta-data
+50-->[androidx.emoji2:emoji2:1.0.0] C:\Users\luigi\.gradle\caches\transforms-3\b0ea43a9612251fcf995bc1b071462f7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+51                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+51-->[androidx.emoji2:emoji2:1.0.0] C:\Users\luigi\.gradle\caches\transforms-3\b0ea43a9612251fcf995bc1b071462f7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+52                android:value="androidx.startup" />
+52-->[androidx.emoji2:emoji2:1.0.0] C:\Users\luigi\.gradle\caches\transforms-3\b0ea43a9612251fcf995bc1b071462f7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+53            <meta-data
+53-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\luigi\.gradle\caches\transforms-3\62e06fdb14d5abd60c5a2e8e03ce7ad2\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+54                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+54-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\luigi\.gradle\caches\transforms-3\62e06fdb14d5abd60c5a2e8e03ce7ad2\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+55                android:value="androidx.startup" />
+55-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\luigi\.gradle\caches\transforms-3\62e06fdb14d5abd60c5a2e8e03ce7ad2\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+56        </provider>
+57    </application>
+58
+59</manifest>
