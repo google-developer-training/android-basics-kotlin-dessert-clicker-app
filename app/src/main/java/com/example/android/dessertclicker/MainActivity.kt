@@ -70,6 +70,9 @@ class MainActivity : AppCompatActivity() {
     private var currentDessert = allDesserts[0]
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        // onCreate() gets a Bundle each time it is called.
+        // When the Activity is restarted due to process shut down, the bundle saved is passed
+        // to onCreate(). If the Activity was starting fresh, this Bundle in onCreate() is null
         super.onCreate(savedInstanceState)
         Log.d(TAG, "onCreate Called")
 
