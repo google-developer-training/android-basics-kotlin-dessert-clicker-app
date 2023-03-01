@@ -181,10 +181,12 @@ class MainActivity : AppCompatActivity() {
      * Menu methods
      */
     private fun onShare() {
-        val shareIntent = ShareCompat.IntentBuilder.from(this)
-                .setText(getString(R.string.share_text, dessertsSold, revenue))
-                .setType("text/plain")
-                .intent
+        val shareIntent = Intent(ACTION_SEND)
+            .setType("text/plain")
+            .putExtra(
+                Intent.EXTRA_TEXT,
+                getString(R.string.share_text, dessertsSold, revenue)
+            )
         try {
             startActivity(shareIntent)
         } catch (ex: ActivityNotFoundException) {
